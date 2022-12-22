@@ -7,11 +7,13 @@ function digPow(n, p) {
     p++;
   });
   let k = sum / n;
-  console.log(k);
-  if (sum === k * n) {
+  if (Number.isInteger(k)) {
     return k;
   } else {
     return -1;
   }
 }
+console.log(digPow(89, 1));
+console.log(digPow(92, 1));
 console.log(digPow(46288, 3));
+console.log(digPow(55, 3));
