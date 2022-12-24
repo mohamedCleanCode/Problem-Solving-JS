@@ -14,13 +14,8 @@
         function findMultiples(integer, limit) {
             //your code here
             let arr = [];
-            let sum = 0;
-            let i = 1;
-            while (limit > sum) {
-                arr.push(i * integer)
-                sum += integer
-                i++
-                console.log(sum)
+            for (let i = integer; i <= limit; i += integer) {
+                arr.push(i)
             }
             return arr;
         }
